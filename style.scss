@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: rgb(63, 222, 251);
+  background: linear-gradient(
+    90deg,
+    rgba(63, 222, 251, 1) 0%,
+    rgba(252, 70, 107, 1) 100%
+  );
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.text {
+  position: absolute;
+  font-size: 3em;
+  top: 25%;
+  color: indigo;
+}
+
+.container {
+  background: rgba(white, 0.4);
+  width: 900px;
+  height: 500px;
+}
+
+.toggle-switch {
+  background: red;
+  width: 200px;
+  height: 100px;
+}
+
+.toggle-switch-1 {
+  overflow: hidden;
+  left: 25%;
+}
+.toggle-switch-2 {
+  overflow: hidden;
+  border-radius: 100px;
+  left: 75%;
+}
+
+.slide-btn-container {
+  width: inherit;
+  height: inherit;
+  background: white;
+  border: 2px solid white;
+  position: absolute;
+  overflow: hidden;
+  .slide-btn {
+    position: absolute;
+    left: 0;
+    width: 100px;
+    height: 99%;
+    transition: all ease 0.6s;
+  }
+
+  .slide-btn-1 {
+    background: blueviolet;
+  }
+
+  .slide-btn-2 {
+    background: lightcoral;
+    border-radius: 50%;
+  }
+
+  .toggle-switch-on {
+    left: 49%;
+  }
+}
